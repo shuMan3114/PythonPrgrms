@@ -78,19 +78,19 @@ extractionSeven = L1[-3: -1]
 stringToTraverse = "COMPUTER"
 index = eval(input("Enter the desired index: "))
 length = len(stringToTraverse)
-if(index>= -len(stringToTraverse) and index < len(stringToTraverse)):
+if(index>= -length and index < length):
     print(stringToTraverse[index])
 else:
-    if(index >= len(stringToTraverse)):
-        rem = index % len(stringToTraverse)
-        quotient = int(index / len(stringToTraverse))
+    if(index >= length):
+        rem = index % length
+        quotient = int(index / length)
         if(quotient % 2 == 0):
             print(stringToTraverse[rem])
         else:
             print(stringToTraverse[-rem])
-    elif(index < -len(stringToTraverse)):
-        positiveRem = (-index) % len(stringToTraverse)
-        quotient = int((-index)/len(stringToTraverse))
+    elif(index < -length):
+        positiveRem = (-index) % length
+        quotient = int((-index)/length)
         if(quotient % 2 == 0):
             print(stringToTraverse[-positiveRem])
         else:
