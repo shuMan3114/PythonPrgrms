@@ -11,16 +11,20 @@ else:
     print(finalList)
 
 # b)
-secondLgstElmt = sorted(finalList)[-2]
-prin(secondLgstElmt)
+if(len(finalList)>1):
+    secondLgstElmt = sorted(finalList)[-2]
+    print(secondLgstElmt)
+else:
+    print(finalList)
 
 # c)
 L1 = [11,-1,22,-3,33,55,44,-50,46,101,77,-100,42]
+finalList = []
 for b in range(0, len(L1)):
-    if(L1[b] < 0 or L1[b] % 2 == 1):
-        L1.pop(b)
+    if(L1[b] > 0 and L1[b] % 2 == 0):
+        finalList.append(L1[b])
 else:
-    print(L1)
+    print(finalList)
 
 # d)
 L2 = [10,20,30,40,10,50,10]
@@ -37,7 +41,7 @@ L3.append(20)
 # b) list.insert(index, value)
 L3.insert(0, 40)
 # c) list.extend(elements separeted by comma)
-L3.extend(12,20,30,40)
+L3.extend([12,20,30,40])
 # d) list.index(element)
 L3.index(12)
 # e) list.remove(element)
@@ -96,7 +100,7 @@ else:
         else:
             print(stringToTraverse[positiveRem])
 
-# Q3
+# Q2
 emptyList = list()
 sequenceList = list("STRING")
 userInputtedList = list(eval(input("Enter the values of list seperated by commas")))

@@ -9,7 +9,7 @@ for a in range(0, len(L1)):
         numIndex = a
 else:
     if(numIndex >= 0):
-        print("The Number you entered was:",numCheck, "\n""Found at index")
+        print("The Number you entered was:",numCheck, "\n""Found at index",numIndex)
     else:
         print("The Number you entered was:",numCheck, "\n""Found at index: None")
 
