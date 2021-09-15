@@ -2,15 +2,16 @@
 # linear search -->> traverse list once..
 numCheck = eval(input("Enter the number you want to check: "))
 L1 = [ 10,15,21,2 ,18 ,4 ,31,13 ,5 ,23 , 64, 29 ]
+print("List items are: ", *L1)
 numIndex = -1
 for a in range(0, len(L1)):
     if(numCheck == L1[a]):
         numIndex = a
 else:
     if(numIndex >= 0):
-        print(*L1,"\n""The Number you entered was: ",numCheck, "\n""Found at index")
+        print("The Number you entered was:",numCheck, "\n""Found at index")
     else:
-        print(*L1,"\n""The Number you entered was: ",numCheck, "\n""Found at index: None")
+        print("The Number you entered was:",numCheck, "\n""Found at index: None")
 
 # Q2
 # CHECKING DUPLICATES
