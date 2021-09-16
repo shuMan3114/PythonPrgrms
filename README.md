@@ -30,4 +30,5 @@
 6. revisionPrgrms(UT-2):\
 	a. dicitonary_revision.py\
 	b. list_practical.py\
-	c. list_revision.py
+	c. list_revision.py\
+	d. dictionary_practical.py
