@@ -10,16 +10,15 @@
 ### IMPORTANT ANNOUNCEMENTS :
 	NOTE: I USSUALLY DO NOT RUN THE CODE BEFORE COMMITING -->> IF THERE ARE ANY BUGS OR TYPOS DO LET ME KNOW
 
-### SOME IMPORTANT GIT COMMANDS:
-	how to create a repository[1]
-	how to commit files[2]
-	how to fork a repository[3]
-	Open pull requests[4]
-	you can use these commands to get started if you new to github.
-	to report any bugs/typos open a pull request, and specify which file, etc etc.
-	also to edit code online use the following url structure: 
-	https://github.dev/:username/:repo_name
-	or just press "." when you are in the repo
+[how to create a repository][1] \
+[how to commit files][2] \
+[how to fork a repository][3] \
+[Open pull requests][4] \
+you can use these commands to get started if you new to github.
+to report any bugs/typos open a pull request, and specify which file, etc etc.
+also to edit code online use the following url structure: 
+https://github.dev/:username/:repo_name
+or just press "." when you are in the repo
 
 ### CONTENTS OF EVERY FOLDER:
 1. array_list:\
