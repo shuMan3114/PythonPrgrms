@@ -5,7 +5,7 @@
 	IF YOU ARENT FROM NHVPS THIS REPO ISNT FOR YOU\
 
 ### WHAT IS IT FOR?
-	FOR THOSE FROM NHVPS AND IN 11TH GRADE ITS A COLLECTION OF ALL PYTHON REVISION PROGRAMS..
+	FOR THOSE FROM NHVPS AND IN 11TH GRADE ITS A COLLECTION OF ALL PYTHON PROGRAMS..
 
 ### IMPORTANT ANNOUNCEMENTS :
 	NOTE: I USSUALLY DO NOT RUN THE CODE BEFORE COMMITING -->> IF THERE ARE ANY BUGS OR TYPOS DO LET ME KNOW
@@ -41,7 +41,8 @@ or just press "." when you are in the repo
 	a. dicitonary_revision.py\
 	b. list_practical.py\
 	c. list_revision.py\
-	d. dictionary_practical.py
+	d. dictionary_practical.py\
+	e. dicitonary_practical_activity.py
 
 
 [1]:https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository "how to create a repository"

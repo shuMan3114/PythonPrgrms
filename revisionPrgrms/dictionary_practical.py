@@ -103,3 +103,5 @@ for j in topRolls:
         topperFellow = studentDetails[rolls[0]]
         topperName = topperFellow["name"]
         print(j,"Topper:",topperName,"with marks:",topMarks[j])
+
+# {rollNo: {roll: roll, name: name, marks: {t: t, p:p, c:c, m:m, ip:ip}}}
