@@ -30,7 +30,8 @@ or just press "." when you are in the repo
 3. lapPracticals:\
 	a. forLoopPracticals.py\
 	b. CT2\
-	c. Unit-Test-1
+	c. Unit-Test-1\
+	d. sem-1 ut-2 practical.py
 
 4. LabRecordPrograms:\
 	a.first25Pregrms.py -->> Note: done till prgrm 19
