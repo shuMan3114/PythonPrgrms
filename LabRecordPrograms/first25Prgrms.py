@@ -176,53 +176,7 @@ print(stringEntered.lower(), stringEntered.upper(), stringEntered.swapcase())
 stringEntered = input("Enter a sentence: ").replace(" ", "-")
 print(stringEntered)
 
-# prgrm14 same as prgrm 17..
-
-# prgrm 15
-numOfNumber = eval(input("Enter how many numbers to be entered: "))
-numberList = []
-for r in range(0, numOfNumber):
-    inputStatement = "Enter " + str(r + 1) + " number: "
-    termToBePushed = eval(input(inputStatement))
-    numberList.append(termToBePushed)
-sortedList = []
-for s in range(0, numOfNumber):
-    if s != numOfNumber - 1:
-        termToBeTested = numberList[0]
-        for t in range(0, len(numberList)):
-            if termToBeTested > numberList[t]:
-                termToBeTested = numberList[t]
-        numberList.remove(termToBeTested)
-        sortedList.append(termToBeTested)
-    else:
-        sortedList.append(numberList[0])
-else:
-    print("lowest", sortedList[0])
-    print("Largest", sortedList[-1])
-
-# prgrm 16
-numOfNumber = eval(input("Enter how many numbers to be entered: "))
-numberList = []
-for u in range(0, numOfNumber):
-    inputStatement = "Enter " + str(u + 1) + " number: "
-    termToBePushed = eval(input(inputStatement))
-    numberList.append(termToBePushed)
-sortedList = []
-for v in range(0, numOfNumber):
-    if v != numOfNumber - 1:
-        termToBeTested = numberList[0]
-        for u in range(0, len(numberList)):
-            if termToBeTested > numberList[u]:
-                termToBeTested = numberList[u]
-        numberList.remove(termToBeTested)
-        sortedList.append(termToBeTested)
-    else:
-        sortedList.append(numberList[0])
-else:
-    print("third smallest", sortedList[2])
-    print("third largest", sortedList[-3])
-
-# prgrm 17
+# 14
 duplicateArrayItems = []
 array = []
 numOfNums = eval(input("Enter the number of values in list(make sure list will have duplicates): "))
@@ -242,7 +196,40 @@ for y in range(0, len(duplicateArrayItems)):
 else:
     print(array)
 
-# prgrm 19
+# PRGRM 14 ALTERNATE METHOD AKA INTERMEDIATE PYTHON
+arrayInput = eval(input("Enter values sepearated by commas: "))
+array = list(map(lambda I : str(I), arrayInput))
+unique = list(filter(lambda k: array.index(k) == "".join(array).rindex(k), array))
+duplicate = list(filter(lambda l : l not in unique , array))
+arrayOut = unique + sorted(duplicate)
+print(list(map(lambda m : int(m), arrayOut)))
+
+
+# prgrm 15
+numberList = eval(input("Enter the values of the list sepearated by commas: "))
+sortedList = sorted(numberList)
+print("lowest", sortedList[0])
+print("Largest", sortedList[-1])
+
+# prgrm 16
+numberList = eval(input("Enter the values of the list sepearated by commas: ")) 
+sortedList = sorted(numberList)
+print("third smallest", sortedList[2])
+print("third largest", sortedList[-3])
+
+# Q17
+# 
+
+# Q18
+x = eval(input("enter numbers sepearated by commas: "))
+y = eval(input("enter numbers sepearated by commas of same length but differing values if you wish: "))
+result = list(filter(lambda d: d not in x or y.index(d) != x.index(d) , y))
+if(len(result) !=0 ):
+    print("differ at index:",y.index(result[0]))
+else:
+    print("identical")
+
+# Q19
 subList = ["english", "mathematics", "science"]
 paramList = ["rollNo", "name"]
 subMarks = []
@@ -263,3 +250,72 @@ else:
     avgMarks = totalMarks/3
     studentInfoAndMarks.append(avgMarks)
     print(studentInfoAndMarks)
+
+#20
+# employName: {employName : name, sales: { m1: , m2: , m3: , m4: , m5: }}
+monthsSelected = list(eval(input("Enter the five months seperate by a comma: ")))
+employDictionary = {}
+totalSales = 0
+for x in range(0,5):
+    inputStatement = "Enter the name of the "+ str(x+1)+" employ: "
+    employName = input(inputStatement)
+    sales= {} 
+    for month in monthsSelected:
+        inputStatement = "Enter sales made by employ in "+month+" : "
+        sale =  eval(input(inputStatement))
+        sales[month] = sale
+        totalSales += sale
+    nestedDict = {"employName": employName, "sales": sales}
+    employDictionary[employName] = nestedDict
+else:
+    for employ in employDictionary:
+        print(employDictionary[employ])
+    print("Total Sales is: ", totalSales)
+
+# Q21
+productInfo = {}
+for y in range(0,5):
+    inputStatement = "Enter the "+ str(y +1)+" product name: "
+    productName = input(inputStatement)
+    price = eval(input("Enter the corresponding products price: "))
+    productInfo[productName] = price
+priceList = list(map(lambda d : productInfo[d], productInfo))
+minMax = [min(priceList), max(priceList)]
+minProducts = list(filter(lambda e : minMax[0]== productInfo[e], productInfo))
+maxProducts = list(filter(lambda q : minMax[1]== productInfo[q], productInfo))
+print("Total price", sum(priceList), "\n""Minprice:", minMax[0],"products having minPrice: ", *minProducts, "\n""MaxPrice",minMax[1],"products having maxPrice: ", *maxProducts)
+
+# Q22
+nameList = ["Lughaidh", "Ander", "Lea", "Delia", "Abidan"]
+phoneDictionary = {}
+for a in range(0, 5):
+    term = ""
+    b = 0
+    while b < 10:
+        term += str(random.randint(0, 9))
+        b += 1
+    phoneDictionary[nameList[a]] = int(term)
+else:
+    for x in phoneDictionary:
+        print(x, phoneDictionary[x])
+
+# Q23
+numToWords = { 1: "One", 2:"Two", 3:"Three", 4: "Four", 5:"Five", 6:"Six", 7:"Seven", 8:"Eight", 9:"Nine"}
+numInput = list(input("Enter the number: "))
+print(" ".join(list(map(lambda a: numToWords[int(a)], numInput))))
+
+# Q24
+dictionary = {}
+if(len(dictionary)== 0):
+    print("empty dictionary")
+
+# Q25
+stateDictionary = {}
+for z in range(0,7):
+    inputStatement = "Enter the name of the "+str(z+1)+" state: "
+    stateName = input(inputStatement)
+    capitalName= input("Enter the corresponding captial name: ")
+    stateDictionary[stateName] = capitalName
+else:
+    for state in stateDictionary:
+        print("State name:", state, "Capital:", stateDictionary[state])
