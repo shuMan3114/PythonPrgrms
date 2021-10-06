@@ -45,6 +45,9 @@ or just press "." when you are in the repo
 	d. dictionary_practical.py\
 	e. dicitonary_practical_activity.py
 
+7. holiday hhws:\
+	a. dussehraHHW.py
+
 
 [1]:https://docs.github.com/en/get-started/quickstart/create-a-repo#create-a-repository "how to create a repository"
 [2]:https://docs.github.com/en/get-started/quickstart/create-a-repo#commit-your-first-change "how to commit files"
