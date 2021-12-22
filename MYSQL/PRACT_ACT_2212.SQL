@@ -48,7 +48,7 @@ SELECT Title FROM BOOKS WHERE(Price <500);
 
 SELECT Title FROM BOOKS WHERE(Price <150 && Quantity > 2);
 
--- 14 doubt
+SELECT Author FROM BOOKS WHERE Author LIKE '____';
 
 SELECT Title, Author FROM BOOKS WHERE(Title LIKE '_A%');
 
@@ -62,4 +62,12 @@ SELECT * FROM BOOKS ORDER BY Title, Price DESC;
 
 SELECT * FROM BOOKS ORDER BY DateOfPurchase DESC;
 
-SELECT Title, Author,Publisher,Price FROM BOOKS WHERE(Publisher IN('MCGRAW','PBP'));
+SELECT Title, Author,Publisher,Price FROM BOOKS WHERE(Publisher = 'PBP') ORDER BY Price DESC;
+
+SELECT Quantity*Price AS Amount FROM BOOKS WHERE Type LIKE '____';
+
+SELECT * FROM BOOKS WHERE Price >= 150 ORDER BY Title ;
+
+SELECT * FROM BOOKS WHERE(Price NOT BETWEEN 100 AND 200);
+
+SELECT "The Price of",Title,"is",Price FROM BOOKS;
